@@ -66,18 +66,15 @@
             text-decoration: none;
             text-align: center;
         }
-
         #menu ul li a:hover,
         #menu ul li a.current {
             color: #fff;
             background: #0088bb;
         }
-
         * html, * html body {
-            background-image: url(about:blank);
-            background-attachment: fixed;
+            background-image: url(about:blank);//相对于窗口固定位置的元素实现无抖动效果 ie6 不支持position:fixed;
+            background-attachment: fixed;//随着页面的滚动轴背景图片不会移动
         }
-
         * html #menu {
             position: absolute;
             bottom: auto;
